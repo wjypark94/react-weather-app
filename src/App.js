@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
+import Search from './components/Search';
 
 class App extends Component {
   constructor(props){
@@ -20,6 +21,7 @@ class App extends Component {
     return (
       <div>
         <h1> Weather Report in Fahrenheit</h1>
+        <Search/>
       <ul>
         {items.map(item => (
           <li key={item.dt}>
